@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rosemary Admin Page</title>
+     <link rel = "stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ </head>
+ <body>
+     
+
+<div class="container">
+<div class="leftbox">
+<nav>
+    <a onclick="tabs(0)" class="tab active">
+<i class="fa fa-user"></i>
+    </a>
+
+    <a onclick="tabs(1)" class="tab">
+        <i class="fa fuote-left"></i>
+           </a>
+ 
+
+    <a onclick="tabs(2)" class="tab">
+        <i class="fa fa-music"></i>
+            </a>
+
+            
+  <a onclick="tabs(3)" class="tab">
+    <i class="fa fuote-left"></i>
+       </a>
+
+  <a onclick="tabs(4)" class="tab">
+    <i class="fa fa-quote-left"></i>
+       </a>
+        
+         
+</nav>
+</div>
+<div class="rightbox">
+<div class="profile tabshow">
+    <h1>Add New Habit</h1>
+    <form action="insert.php" method="POST">
+    <h2>Habit Name</h2>
+<input type="text" class="input" placeholder="Stay hydrated!" name="name" required>
+
+<h2>Small description</h2>
+<input type="text" class="input" placeholder="lets drink some more water" name="description" required>
+
+
+<h2>Habit Category</h2>
+<select name="category" id="category">
+    <option value="health">Health</option>
+    <option value="education">Education</option>
+    <option value="wealth">Wealth</option>
+    <option value="travel">Enjoyment</option>
+  </select>
+
+
+  <h2>Picture</h2>
+
+<input type="file" class="input"  >
+
+  <h2>Notes</h2>
+<textarea  type="text" class="input" value="Drink water" rows="4" cols="50" name="notes" placeholder="start by drinking water each hour" required></textarea>
+
+
+
+<input type="submit" value="Submit" name="submit" class="btn">
+
+
+</form>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="jquery/jquery.js"></script>
+<script></script>
+<script></script>
+ </body>
+ </html>
